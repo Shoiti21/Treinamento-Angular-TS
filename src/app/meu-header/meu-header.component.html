@@ -1,5 +1,5 @@
 <h1>{{ titulo }}</h1>
 
-<p>{{ mensagem }}</p>
+<p *ngIf="mensagem">{{ mensagem }}</p>
 
 <button (click)="meuClique()">Evento de Clique</button>

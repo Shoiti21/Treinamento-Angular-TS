@@ -1,6 +1,15 @@
 <h1>{{ title | uppercase }}</h1>
 
 <app-meu-header titulo="{{ title | uppercase }}"
-                mensagem="Minha mensagem"
                 (funcao)="funcaoDeLog()">
 </app-meu-header>
+
+<p>Lista de Coisas</p>
+<div *ngFor="let item of lista">
+  {{ item.nome }}
+</div>
+
+<div [ngSwitch]="escolha">
+  <p *ngSwitchCase="0">Escolha 0</p>
+  <p *ngSwitchCase="1">Escolha 1</p>
+</div>
