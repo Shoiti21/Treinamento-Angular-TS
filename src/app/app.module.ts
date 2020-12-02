@@ -7,6 +7,8 @@ import { MeuConteudoComponent } from './meu-conteudo/meu-conteudo.component';
 import { FormsModule } from '@angular/forms';
 import { RedDirective } from './red.directive';
 import { MeuArrayComponent } from './meu-array/meu-array.component';
+import { FormatarPipe } from './formatar.pipe';
+import { MeuTextoComponent } from './meu-texto/meu-texto.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MeuArrayComponent } from './meu-array/meu-array.component';
     MeuHeaderComponent,
     MeuConteudoComponent,
     RedDirective,
-    MeuArrayComponent
+    MeuArrayComponent,
+    FormatarPipe,
+    MeuTextoComponent
   ],
   imports: [
     BrowserModule,
