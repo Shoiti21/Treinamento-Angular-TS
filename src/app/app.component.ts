@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'meu-projeto-limpo';
+
+  funcaoDeLog() {
+    console.log(this.title);
+  }
 }
