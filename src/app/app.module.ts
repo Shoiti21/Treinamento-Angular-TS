@@ -9,6 +9,7 @@ import { RedDirective } from './red.directive';
 import { MeuArrayComponent } from './meu-array/meu-array.component';
 import { FormatarPipe } from './formatar.pipe';
 import { MeuTextoComponent } from './meu-texto/meu-texto.component';
+import { ChangeColorDirective } from './change-color.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MeuTextoComponent } from './meu-texto/meu-texto.component';
     RedDirective,
     MeuArrayComponent,
     FormatarPipe,
-    MeuTextoComponent
+    MeuTextoComponent,
+    ChangeColorDirective
   ],
   imports: [
     BrowserModule,
