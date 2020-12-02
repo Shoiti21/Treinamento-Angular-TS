@@ -1,0 +1,16 @@
+<p [ngClass]="minhaVariavel ? 'minha-classe-true' : 'minha-classe-false'">
+  Meu texto
+</p>
+
+<p [ngClass]="{ 'minha-classe-true' : minhaVariavel,
+                'minha-classe-false' : !minhaVariavel
+              }">
+  Meu texto
+</p>
+
+<p [ngClass]="ngClassObj">
+  Meu texto
+</p>
+
+<input type="text" [(ngModel)]="ngModelText">
+<button type="button" (click)="logText()" [style.color]="ngModelText === '' ? 'red ': 'black'">Imprimir</button>
