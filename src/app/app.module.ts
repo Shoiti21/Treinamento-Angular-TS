@@ -11,6 +11,8 @@ import { MeuHeaderComponent } from './meu-header/meu-header.component';
 import { MeuTextoComponent } from './meu-texto/meu-texto.component';
 import { MinhaPaginaComponent } from './minha-pagina/minha-pagina.component';
 import { RedDirective } from './red.directive';
+import { AppRoutingModule } from './app-routing.module';
+import { MinhaPagina2Component } from './minha-pagina2/minha-pagina2.component';
 
 
 @NgModule({
@@ -23,12 +25,14 @@ import { RedDirective } from './red.directive';
     FormatarPipe,
     MeuTextoComponent,
     ChangeColorDirective,
-    MinhaPaginaComponent
+    MinhaPaginaComponent,
+    MinhaPagina2Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
